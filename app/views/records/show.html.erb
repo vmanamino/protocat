@@ -1,0 +1,15 @@
+<h1>Boston Open Data Catalog</h1>
+<h2>Record Display</h2>
+<p><b>Title</b> : <%= @record.title %></p>
+<p><b>Source</b> : <%= link_to @source.name, source_path(@source.id)  %></p>
+<p><b>Description</b> : <%= @record.description %></p>
+<p><b>Category</b> : <%= @record.category %></p>
+<p><b>Permissions</b> : <%= @record.permissions %></p>
+<p><b>Format</b> : <%= @record.format %></p>
+<p><b>Access</b> : <%= @record.access %></p>
+<p><b>Frequency</b> : <%= @record.frequency %></p>
+<p><b>Topics</b> : <%= @record.topics %></p>
+<p><b>Neighborhoods</b> : <%= @record.neighborhoods %></p>
+<p><b>Dictionary</b> : <%= link_to "Dictionary", dictionary_path(@dictionary.id) %></p>
+
+

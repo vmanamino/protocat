@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  get 'welcome/about'
+
+  resources :dictionaries
+
+  resources :sources
+
+  resources :records
+
+  get 'about' => 'welcome/about'
 
   root to: 'welcome#about'
 

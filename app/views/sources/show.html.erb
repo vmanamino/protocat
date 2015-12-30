@@ -1,0 +1,11 @@
+<h1>Sources#show</h1>
+<p><b>Name: </b><%= @source.name %></p>
+<p><b>Description: </b><%= @source.description %></p>
+<h2><b>Data Provided</b></h2>
+<div>
+  <div>
+    <% @records.each do |record| %>
+      <p><%= link_to record.title, record_path(record.id) %>
+    <% end %>
+  </div>
+</div>
